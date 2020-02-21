@@ -1,1 +1,14 @@
 // Mixins Here
+
+//btn styling
+.btn-style(@bk-color, @text-color, @text-size) {
+    background: @bk-color;
+    color: @text-color;
+    font-size: @text-size;
+}
+
+.btn-shape(@btn-width, @btn-border, @btn-rounded) {
+    width: @btn-width;
+    border: @btn-border;
+    border-radius: @btn-rounded;
+}
