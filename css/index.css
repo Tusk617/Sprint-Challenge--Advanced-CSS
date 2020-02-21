@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid red;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -109,7 +109,7 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    width: 143%;
+    width: 500px;
   }
 }
 ol,
@@ -165,20 +165,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.headerTitle {
+.header-nav {
   display: flex;
+  justify-content: center;
   width: 100%;
+}
+.header-nav .headerTitle {
+  display: flex;
+  width: 800px;
   justify-content: center;
 }
-.headerTitle h1 {
+.header-nav .headerTitle h1 {
   font-size: 4rem;
   padding: 1% 0;
+}
+@media (max-width: 500px) {
+  .header-nav {
+    width: 500px;
+  }
 }
 nav {
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 3;
+  top: 1;
   width: 100%;
   background-color: rgba(32, 40, 58, 0.7);
   opacity: 1;
@@ -192,6 +202,11 @@ nav a {
   color: white;
   opacity: 100%;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -201,6 +216,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 500px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -212,6 +232,9 @@ footer {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
   .home .intro img {
     width: 100%;
   }
