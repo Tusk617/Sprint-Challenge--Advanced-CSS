@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid red;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -159,6 +159,26 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.headerTitle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.headerTitle h1 {
+  font-size: 4rem;
+  padding: 1% 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  font-size: 2rem;
+  margin: 0 2%;
+  padding: 0.5% 0;
+  text-decoration: none;
+  color: #23293B;
 }
 footer {
   color: #22283B;
