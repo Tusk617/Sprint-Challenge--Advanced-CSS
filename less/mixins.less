@@ -8,6 +8,11 @@
         padding: .5% 0;
 }
 
+.anchor-style() {
+    text-decoration: none;
+    color: @ebony-clay;
+}
+
 //btn styling
 .btn-style(@bk-color, @text-color, @text-size) {
     background: @bk-color;
@@ -19,4 +24,9 @@
     width: @btn-width;
     border: @btn-border;
     border-radius: @btn-rounded;
+}
+
+.btn-hover(@bk-hover, @text-hover) {
+    background: @bk-hover;
+    color: @text-hover;
 }
