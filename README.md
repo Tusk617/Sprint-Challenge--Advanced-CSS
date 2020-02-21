@@ -34,13 +34,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive layouts have hardcoded breakpoints, making them only useful for a few device types. Responsive designs are much more fluid, and allow for the expanding and shrinking of the web page so that it looks good no matter the device.
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    Mobile first refers to building the layout of a site or application from a mobile view first, as in, a smaller more condensed screen. When you build mobile first and need to have a responsive layout, you would use 'min-width'. Desktop first is similar but you would build from wider screens down, this time using 'max-width' as opposed to 'min-width'
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+    it becomes more accesible by being able to convert rem by the power of 10.
 
 4. How would you describe preprocessing to someone new to CSS?
-
+    Pre-processing essentially makes it so we can type a simpler form of the CSS syntax, which will then get converted to regular CSS without us having to actually touch css. 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I really like mixins, it just overall makes things neater. Though on the flipside, I also struggle to find reason enough to use them currently. It might be that I'm just used to writing regular CSS and it's a habit now, but I just don't use them as much as I want to.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -108,17 +115,17 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [X]  Use at least 2 parameters to create your button
 
 * [ ] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
