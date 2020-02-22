@@ -1,1 +1,42 @@
 // Navigation code here
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .headerTitle {
+        display: flex;
+        width: 800px;
+        justify-content: center;
+
+        h1 {
+            font-size: 4rem;
+            padding: 1% 0;
+        }//h1 ends here
+    }//headerTitle ends here
+    @media @phone {
+        width: 500px;
+    }
+}
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        a {
+            .anchor-pos();
+            .anchor-style();
+            color: white;
+            opacity: 100%;
+        }
+
+        position: fixed;
+        top: 1;
+        width: 100%;
+        background-color: rgba(32, 40, 58, 0.7);
+        opacity: 1;
+        
+        @media @phone {
+            width: 500px;
+        }
+    }
